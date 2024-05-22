@@ -4,7 +4,7 @@ buildscript {
     }
     repositories {
         mavenCentral()
-        jcenter()
+        jcenter() /*2022년 2월1일 이후에는 빌드에서 jcenter 아티팩트를 해결할 수 없음*/
     }
     dependencies {
         classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
